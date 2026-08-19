@@ -12,8 +12,7 @@ desc=iris.DESCR
 df=pd.DataFrame(iris.data, columns=iris.feature_names)
 df['species']=iris.target
 
-corr=df.corr()
-
+corr = df[iris.feature_names].corr()
 
 # -----------------------------------features pairplot and heatmap--------------------------
 
